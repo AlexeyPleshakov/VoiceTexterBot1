@@ -37,7 +37,7 @@ namespace VoiceTexterBot.Services
             }
         }
 
-        public string Process(string inputParam)
+        public string Process(string languageCode)
         {
             string inputAudioPath = Path.Combine(_appSettings.DownloadsFolder, $"{_appSettings.AudioFileName}.{_appSettings.InputAudioFormat}");
             string outputAudioPath = Path.Combine(_appSettings.DownloadsFolder, $"{_appSettings.AudioFileName}.{_appSettings.OutputAudioFormat}");
